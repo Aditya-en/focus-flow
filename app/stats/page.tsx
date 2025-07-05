@@ -75,7 +75,7 @@ export default function StatsPage() {
         <div className="max-w-6xl mx-auto space-y-8">
           {/* Header */}
           <div className="text-center space-y-4">
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
               Productivity Analytics
             </h1>
             <p className="text-muted-foreground text-lg">Track your progress and identify patterns</p>
@@ -169,7 +169,7 @@ export default function StatsPage() {
                         cx="50%"
                         cy="50%"
                         labelLine={false}
-                        label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
+                        label={({ name, percent }) => `${name}: ${((percent ?? 0) * 100).toFixed(0)}%`}
                         outerRadius={80}
                         fill="#8884d8"
                         dataKey="value"

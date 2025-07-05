@@ -192,7 +192,9 @@ export default function TimerPage() {
                 ) : (
                   <Coffee className="h-6 w-6 text-green-600" />
                 )}
-                <CardTitle className="text-2xl">{sessionType === "focus" ? "Focus Time" : "Break Time"}</CardTitle>
+                <CardTitle className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                  {sessionType === "focus" ? "Focus Time" : "Break Time"}
+                </CardTitle>
               </div>
               <CardDescription>{mode === "pomodoro" ? "Pomodoro Technique" : "Deep Work Session"}</CardDescription>
             </CardHeader>
