@@ -21,7 +21,7 @@ export function Navigation() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center space-x-8">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+              <div className="h-8 w-8 rounded-lg bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 flex items-center justify-center">
                 <Timer className="h-4 w-4 text-white" />
               </div>
               <span className="font-bold text-xl">FocusFlow</span>
